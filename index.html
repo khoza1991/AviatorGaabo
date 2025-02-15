@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviator Predictor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Aviator Predictor</h1>
+    <p>Enter the round details to get a cashout suggestion:</p>
+    <form id="predictionForm">
+      <label for="duration">Round Duration (seconds):</label>
+      <input type="number" id="duration" name="duration" required>
+      <br>
+      <label for="previousMultiplier">Previous Multiplier:</label>
+      <input type="number" id="previousMultiplier" name="previousMultiplier" step="0.1" required>
+      <br>
+      <button type="submit">Get Prediction</button>
+    </form>
+    <div id="result">
+      <h2>Prediction:</h2>
+      <p id="predictionValue">-</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
