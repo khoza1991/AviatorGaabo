@@ -5,7 +5,7 @@ document.getElementById("predictionForm").addEventListener("submit", async (e) =
   const previousMultiplier = document.getElementById("previousMultiplier").value;
 
   try {
-    const response = await fetch("https://your-backend-api.com/predict", {
+    const response = await fetch("https://github.com/khoza1991/AviatorGaabo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
